@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "aqupdhat",
+  "version": "${version}",
+
+  "name": "Hat command",
+  "description": "This mod adds /hat command",
+  "authors": [
+    "AqUpd!"
+  ],
+  "contact": {
+    "homepage": "https://aqupd.ru",
+    "sources": "https://github.com/AquUpd/hat-command"
+  },
+
+  "license": "CC BY-NC 3.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.aqupd.aqupdhat.Main"
+    ]
+  },
+  "mixins": [
+    "aqupdhat.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}
