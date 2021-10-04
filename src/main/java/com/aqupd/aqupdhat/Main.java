@@ -17,15 +17,17 @@ public class Main implements ModInitializer {
         CommandRegistrationCallback.EVENT.register(((dispatcher, dedicated) -> {
             dispatcher.register(literal("hat").executes(context -> {
                 ServerPlayerEntity user = context.getSource().getPlayer();
-
                 ItemStack hatStack = user.getMainHandStack();
-                if (hatStack.getItem() == Items.AIR) {
-                    context.getSource().sendError(new TranslatableText("command.simplehat.not_item"));
-                    return -1;
-                }
-
                 ItemStack currentHat = user.getEquippedStack(EquipmentSlot.HEAD).copy();
-
+                if (hatStack.getItem() == Items.AIR) {
+                    if (!currentHat.isEmpty()){
+                        user.equipStack(EquipmentSlot.HEAD, hatStack);
+                        user.setStackInHand(Hand.MAIN_HAND, currentHat);
+                    } else {
+                        context.getSource().sendError(new TranslatableText("You don't have an item in your hand/on your head."));
+                        return -1;
+                    }
+                }
                 if (currentHat.isEmpty()) {
                     user.equipStack(EquipmentSlot.HEAD, hatStack.copy());
                     hatStack.setCount(0);
