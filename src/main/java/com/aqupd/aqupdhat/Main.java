@@ -24,7 +24,7 @@ public class Main implements ModInitializer {
                         user.equipStack(EquipmentSlot.HEAD, hatStack);
                         user.setStackInHand(Hand.MAIN_HAND, currentHat);
                     } else {
-                        context.getSource().sendError(new TranslatableText("You don't have an item in your hand/on your head."));
+                        context.getSource().sendError(new TranslatableText("You don't have an item in your hand or head."));
                         return -1;
                     }
                 }
