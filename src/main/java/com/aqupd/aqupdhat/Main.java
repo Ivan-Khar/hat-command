@@ -1,6 +1,6 @@
 package com.aqupd.aqupdhat;
 
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.DedicatedServerModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import static net.minecraft.server.command.CommandManager.*;
 
@@ -11,9 +11,9 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 
-public class Main implements ModInitializer {
+public class Main implements DedicatedServerModInitializer {
     @Override
-    public void onInitialize() {
+    public void onInitializeServer() {
         CommandRegistrationCallback.EVENT.register(((dispatcher, dedicated) -> dispatcher.register(literal("hat").executes(ctx -> {
             ServerPlayerEntity user = ctx.getSource().getPlayer();
             ItemStack hatStack = user.getMainHandStack();
