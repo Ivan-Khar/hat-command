@@ -15,21 +15,17 @@
 
   "license": "CC BY-NC 3.0",
 
-  "environment": "*",
+  "environment": "server",
   "entrypoints": {
-    "main": [
+    "server": [
       "com.aqupd.aqupdhat.Main"
     ]
   },
-  "mixins": [
-    "aqupdhat.mixins.json"
-  ],
-
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16",
-    "luckperms": "*"
+    "fabric-permissions-api-v0": "*"
   }
 }
