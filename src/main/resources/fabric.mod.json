@@ -26,6 +26,6 @@
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16",
-    "luckperms": "*"
+    "fabric-permissions-api-v0": "*"
   }
 }
