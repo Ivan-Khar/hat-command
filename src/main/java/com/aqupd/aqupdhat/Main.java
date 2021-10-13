@@ -23,8 +23,8 @@ public class Main implements DedicatedServerModInitializer {
                 ItemStack hatStack = user.getMainHandStack();
                 ItemStack currentHat = user.getEquippedStack(EquipmentSlot.HEAD).copy();
                 //logError(String.valueOf(currentHat.getEnchantments()));
-                if (Permissions.check(user, "aqupdhat.hat.usage")) {
-                    if (!currentHat.getEnchantments().toString().contains("minecraft:binding_curse") || Permissions.check(user, "aqupdhat.hat.bypassbinding")) {
+                if (Permissions.check(user, "aqupdhat.hat.usage", 0)) {
+                    if (!currentHat.getEnchantments().toString().contains("minecraft:binding_curse") || Permissions.check(user, "aqupdhat.hat.bypassbinding") || user.isCreative()) {
                         if (hatStack.getItem() == Items.AIR) {
                             if (!currentHat.isEmpty()) {
                                 user.equipStack(EquipmentSlot.HEAD, hatStack);
