@@ -30,7 +30,7 @@ public class Main implements DedicatedServerModInitializer {
                                 user.equipStack(EquipmentSlot.HEAD, hatStack);
                                 user.setStackInHand(Hand.MAIN_HAND, currentHat);
                             } else {
-                                ctx.getSource().sendError(new TranslatableText("You don't have an item in your hand or head."));
+                                ctx.getSource().sendError(new TranslatableText("aqupdhat.noitem"));
                                 return -1;
                             }
                         }
@@ -43,11 +43,11 @@ public class Main implements DedicatedServerModInitializer {
                         }
                         return 1;
                     } else {
-                        ctx.getSource().sendError(new TranslatableText("You have \"Curse of Binding\" on your head item."));
+                        ctx.getSource().sendError(new TranslatableText("aqupdhat.curse"));
                         return -1;
                     }
                 } else {
-                    ctx.getSource().sendError(new TranslatableText("You don't have permission to do this."));
+                    ctx.getSource().sendError(new TranslatableText("aqupdhat.permission"));
                     return -1;
                 }
             }));
