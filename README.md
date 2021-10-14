@@ -12,3 +12,6 @@ Permissions:
 `aqupdhat.hat.usage`
 * Bypass "Curse Of Binding" on your head: </br>
 `aqupdhat.hat.bypassbinding`
+
+Thanks for translations:
+* AqUpd - Russian and English.
