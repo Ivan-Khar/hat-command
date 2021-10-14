@@ -16,4 +16,4 @@ Permissions:
 Thanks for translations:
 * AqUpd - Russian and English.
 
-You can PR new translations https://github.com/AquUpd/hat-command/wiki/Translations
+You can add new translations [Wiki page](https://github.com/AquUpd/hat-command/wiki/Translations)
