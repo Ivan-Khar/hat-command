@@ -15,5 +15,6 @@ Permissions:
 
 Thanks for translations:
 * AqUpd - Russian and English.
+* elhertz - Spanish
 
 You can add new translations [Wiki page](https://github.com/AquUpd/hat-command/wiki/Translations)
