@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class AqLogger {
     private static final Logger LOGGER = LogManager.getLogger();
-    private static String logprefix = "[AqUpd's blank mod] ";
+    private static final String logprefix = "[AqUpd's server mod] ";
 
     public static void logError(String error) {
         LOGGER.error(logprefix + error);
