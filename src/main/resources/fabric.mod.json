@@ -6,7 +6,7 @@
   "name": "Hat command",
   "description": "This mod adds /hat command",
   "authors": [
-    "AqUpd!"
+    "AqUpd"
   ],
   "contact": {
     "homepage": "https://aqupd.ru",
@@ -17,7 +17,7 @@
 
   "environment": "server",
   "entrypoints": {
-    "server": [
+    "main": [
       "com.aqupd.aqupdhat.Main"
     ]
   },
