@@ -1,7 +1,7 @@
 package com.aqupd.aqupdhat;
 
 import me.lucko.fabric.api.permissions.v0.Permissions;
-import net.fabricmc.api.DedicatedServerModInitializer;
+import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 
 import static com.aqupd.aqupdhat.utils.AqLogger.*;
@@ -14,9 +14,9 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 
-public class Main implements DedicatedServerModInitializer {
+public class Main implements ModInitializer {
     @Override
-    public void onInitializeServer() {
+    public void onInitialize() {
         CommandRegistrationCallback.EVENT.register(((dispatcher, dedicated) -> {
             dispatcher.register(literal("hat").executes(ctx -> {
                 ServerPlayerEntity user = ctx.getSource().getPlayer();
