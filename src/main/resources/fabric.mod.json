@@ -15,7 +15,7 @@
 
   "license": "CC BY-NC 3.0",
 
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "com.aqupd.aqupdhat.Main"
