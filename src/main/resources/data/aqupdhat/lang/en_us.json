@@ -1,5 +1,6 @@
 {
 	"aqupdhat.noitem": "You don't have an item in your hand or head.",
 	"aqupdhat.curse": "You have \"Curse of Binding\" on your head item.",
-	"aqupdhat.permission": "You don't have permission to do this."
+	"aqupdhat.permission": "You don't have permission to do this.",
+	"aqupdhat.console": "You can't use this command in the console."
 }

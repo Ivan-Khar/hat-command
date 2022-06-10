@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.10-SNAPSHOT'
+	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -36,8 +36,6 @@ dependencies {
 	// Language API
 	include(modImplementation("fr.catcore:server-translations-api:${project.server_translations_version}"))
 
-	// lazyDFU for faster loading
-	modImplementation 'com.github.astei:lazydfu:0.1.2'
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
 }
