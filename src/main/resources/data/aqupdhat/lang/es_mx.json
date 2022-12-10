@@ -1,6 +1,7 @@
 {
 	"aqupdhat.noitem": "No tienes ningún objeto en tu mano o en tu cabeza.",
-	"aqupdhat.curse": "El objeto de tu cabeza posee \"Maldición de Ligamiento\".",
+	"aqupdhat.curse": "El objeto de tu cabeza posee \"%s\".",
 	"aqupdhat.permission": "No tienes permisos para hacer eso.",
-	"aqupdhat.console": "No puedes usar este comando en la consola."
+	"aqupdhat.console": "No puedes usar este comando en la consola.",
+	"aqupdhat.droppeditem": "Item was dropped because your inventory was full"
 }
