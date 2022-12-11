@@ -3,5 +3,5 @@
 	"aqupdhat.curse": "El objeto de tu cabeza posee \"%s\".",
 	"aqupdhat.permission": "No tienes permisos para hacer eso.",
 	"aqupdhat.console": "No puedes usar este comando en la consola.",
-	"aqupdhat.droppeditem": "El objeto se ha eliminado porque el inventario estaba lleno"
+	"aqupdhat.droppeditem": "El artículo es eliminado porque su inventario estaba lleno"
 }
