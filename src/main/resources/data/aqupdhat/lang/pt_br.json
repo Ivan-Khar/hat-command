@@ -1,0 +1,7 @@
+{
+	"aqupdhat.noitem": "Você não tem um item em sua mão ou cabeça.",
+	"aqupdhat.curse": "Você tem \"%s\" no seu item da cabeça.",
+	"aqupdhat.permission": "Você não tem permissão para fazer isso.",
+	"aqupdhat.console": "Você não pode usar este comando no console.",
+	"aqupdhat.droppeditem": "O item foi dropado porque seu inventário estava cheio"
+}
