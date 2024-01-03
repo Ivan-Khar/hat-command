@@ -1,4 +1,4 @@
-# Hat command [1.19 version]
+# Hat command
 _serverside_, requires LuckPerms
 ____
 This mod just adds `/hat` command that will put your hand item in the head (Not working when you have "Curse of Binding" in your head item)
