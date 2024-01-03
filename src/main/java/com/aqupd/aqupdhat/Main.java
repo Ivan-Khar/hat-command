@@ -3,6 +3,7 @@ package com.aqupd.aqupdhat;
 import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
@@ -24,7 +25,7 @@ public class Main implements ModInitializer {
                 int hatItemCount = hatItem.getCount();
                 //logError(String.valueOf(hatItem.getEnchantments()));
                 if (Permissions.check(user, "aqupdhat.hat.usage", 0)) {
-                    if (!hatItem.getEnchantments().toString().contains("minecraft:binding_curse") || Permissions.check(user, "aqupdhat.hat.bypassbinding") || user.isCreative()) {
+                    if (!EnchantmentHelper.hasBindingCurse(hatItem) || Permissions.check(user, "aqupdhat.hat.bypassbinding") || user.isCreative()) {
                         if (handItem.isEmpty()) { // If there's no item in hands
                             if (!hatItem.isEmpty()) {
                                 user.equipStack(EquipmentSlot.HEAD, handItem);
